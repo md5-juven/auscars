@@ -1,0 +1,34 @@
+
+  
+    <mat-toolbar>
+      <button routerLink="/home">
+        <h3 >AUSCARS</h3>
+      </button>
+       
+      <marquee behavior="scroll" onmouseover="this.stop()" onmouseleave="this.start()" direction="right" scrollAmount="25">
+       <button routerLink="/dashboard">
+        <img src="../../assets/logos/car2.png" alt="car">
+       </button></marquee>
+       <div> 
+        <button mat-icon-button routerLink="/user-cart" *ngIf="cart">
+          <mat-icon class="icon">add_shopping_cart</mat-icon>
+        </button>
+         <button mat-icon-button routerLink="/login" *ngIf="!value">
+          <mat-icon class="icon">perm_identity</mat-icon>
+        </button>
+        <button mat-icon-button routerLink="/login" *ngIf="value" (click)="logout()">
+          <mat-icon class="icon">logout</mat-icon>
+        </button>
+       </div>
+    </mat-toolbar>
+    <!-- <app-user-cart></app-user-cart> -->
+    <!-- <app-edit-vehicle></app-edit-vehicle> -->
+    <!-- <app-dashboard></app-dashboard> -->
+    <router-outlet></router-outlet>
+    <!-- Add Content Here -->
+    <!-- <app-registration></app-registration> -->
+    <!-- <app-home></app-home> -->
+    <!-- <app-login></app-login> -->
+    
+  
+

@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+#add{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 750px;
+    left: 1800px;
+  
+  }
+  
+  #icon{
+    color: black;
+  }
+
+
+mat-card{
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 840px;
+    background-color: #000000;
+    z-index: 1000;
+    position: fixed;
+    top: 250px;
+    right: 650px;
+}
+
+
+mat-card-content{
+    text-align: center;
+}
+
+
+
+.icon{
+    background-color: red;
+    height: 3rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+h4{
+    margin-top: 10px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#upload{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#img{
+    box-shadow: 2px 4px 16px 4px wheat;
+    border-radius: 10px;
+}
+
+#btnup{
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#button1{
+    background-color: red;
+    margin-left: 170px;
+}
+
+#button0{
+    background-color: red;
+    margin-left: 185px;
+}
+
+#buttons{
+    margin-left: 20px;
+}
+
+/*======================================================================================================================================*/
+
+.example-box {
+    border-radius: 20px;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0 3px 1px -2px rgb(216, 7, 7),
+                0 2px 2px 0 rgb(216, 7, 7),
+                0 1px 5px 0 rgb(216, 7, 7);
+  }
+  
+  .example-box:active {
+    box-shadow: 0 5px 5px -3px  rgb(216, 7, 7),
+                0 8px 10px 1px  rgb(216, 7, 7),
+                0 3px 14px 2px  rgb(216, 7, 7);
+  }
+  
+

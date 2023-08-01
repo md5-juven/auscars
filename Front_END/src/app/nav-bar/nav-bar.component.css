@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+button{
+  background: transparent;
+  border: none;
+}
+
+img{
+  height: 3rem;
+  position: relative;
+  right: 150px;
+}
+
+.icon{
+  color: red;
+}
+
+mat-toolbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+}
+h3{
+  margin-top: 25px;
+  letter-spacing: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: xx-large;
+  color: red;
+  text-decoration: none;
+  list-style: none;
+}

@@ -1,0 +1,17 @@
+{
+    "vehicles": [
+        {   "id":"AUDI-AX",
+            "vehicleName": "AUDI",
+            "price": 5600000,
+            "description": "New Model",
+            "photo": "./AUDI.jpg"
+        },
+        {
+            "id":"BMW-BX",
+            "vehicleName": "BMW",
+            "price": 4600000,
+            "description": "New Model",
+            "photo": "./BMW.jpg"
+        }
+    ]
+}

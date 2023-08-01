@@ -1,0 +1,33 @@
+<div id="bgImg">
+    <mat-card *ngIf="vehicle">
+        <mat-card-content>
+            
+                <img id="img" src="{{vehicle.photo}}" alt="car image">
+                <input hidden="hidden"  id="input-file-id" type="file" (change)="onSelectFile($event)"><br>
+                <label id="upload" for="input-file-id" class="mat-fab"><mat-icon id="btnup">upload</mat-icon></label>
+            <br>
+            <mat-form-field id="input" color="primary">
+                <mat-label>MODEL</mat-label>
+                    <input type="text" name="model" matInput [(ngModel)]="vehicle.model" #model="ngModel" readonly>
+                </mat-form-field><br>
+                <mat-form-field id="input">
+                    <mat-label>VEHICLE NAME</mat-label>
+                        <input type="text" name="vehicleName" matInput [(ngModel)]="vehicle.vehicleName" #vehicleName="ngModel">
+                    </mat-form-field><br>   
+                <mat-form-field id="input">
+                    <mat-label>PRICE</mat-label>
+                        <input type="text" name="price" matInput [(ngModel)]="vehicle.price" #price="ngModel">
+                </mat-form-field><br>
+                <mat-form-field id="input">
+                    <mat-label>DESCRIPTION</mat-label>
+                        <input type="text" name="description" matInput [(ngModel)]="vehicle.description" #description="ngModel">
+                </mat-form-field>
+        </mat-card-content>
+
+        <mat-card-actions >
+            <button id="buttons" mat-mini-fab color="accent" type="submit" (click)="editCar()"><mat-icon>save</mat-icon></button>
+            <button id="button0" mat-raised-button color="primary" routerLink="/dashboard" (click)="canDeactivate()">BACK</button>
+            <button id="button1" mat-mini-fab (click)="deleteCar()"><mat-icon>delete</mat-icon></button> 
+        </mat-card-actions>
+    </mat-card>
+</div>

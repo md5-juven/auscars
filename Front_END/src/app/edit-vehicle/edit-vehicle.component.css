@@ -1,0 +1,78 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+#bgImg{
+    background-image: url('../../assets/images/car2.jpg');
+    background-repeat: no-repeat;
+}
+
+mat-card{
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 840px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+
+mat-card-content{
+    text-align: center;
+}
+
+mat-card:hover{
+    box-shadow: 2px 4px 16px 4px red;
+}
+
+
+.icon{
+    background-color: red;
+    height: 3rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+h4{
+    margin-top: 10px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#upload{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#img{
+    box-shadow: 2px 4px 16px 4px wheat;
+    border-radius: 10px;
+}
+
+#btnup{
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#button1{
+    background-color: red;
+    margin-left: 170px;
+}
+
+#button0{
+    background-color: red;
+    margin-left: 185px;
+}
+
+#buttons{
+    margin-left: 20px;
+}
+

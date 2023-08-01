@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+
+.example-card {
+    max-width: 400px;
+    height: 400px;
+    background-color: #191919;
+  }
+
+  #main{
+    margin-left: 80px;
+    margin-top: 150px;
+    overflow-x: hidden;
+    grid-template-columns: repeat(autofit, minmax(300px, auto));
+  }
+
+  #card:hover {
+    box-shadow: 2px 4px 16px 4px red;
+  }
+
+  #card{
+    background-color: #191919;
+    border: none;
+    width: 450px;
+  }
+
+  p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: wheat;
+  }
+
+  h3, h4{
+    font-family: 'Josefin Sans', sans-serif;
+    color: red;
+    letter-spacing: 0.4em;
+    text-align: center;
+  }
+
+  mat-card-content{
+    margin-top: 20px;
+    color: wheat;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+
+  #btn1{
+    margin-left: 80px;
+  }
+
+  #btn{
+    background: transparent;
+    border: none;
+    margin-left: 110px;
+    border-radius: 100px;
+  }
+
+  #cart{
+    height: 2rem;
+  }
+
+  .material-icons{
+    color: red;
+  }
+
+  

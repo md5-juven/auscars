@@ -1,0 +1,61 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+#bgImg{
+    background-image: url('../../assets/images/car2.jpg');
+    background-repeat: no-repeat;
+}
+
+mat-card{
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 840px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+mat-card:hover{
+    box-shadow: 2px 4px 16px 4px red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+mat-card-content{
+    text-align: center;
+}
+
+mat-card-title{
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 270px;
+    color: red;
+
+}
+
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+    color: red;
+}
+#name, #password, #state, #landMark{
+    margin-right: 20px;
+}
+
+#reset{
+    background-color: red;
+    margin-right: 20px;
+}
+
+#back{
+    background-color: red;
+    margin-left: 180px;
+}

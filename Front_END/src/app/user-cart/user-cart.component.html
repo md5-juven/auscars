@@ -1,0 +1,18 @@
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="main">
+    <div class="col" *ngFor="let userSVH of userVehicle">
+        <div class="card h-100" id="card">
+            <img src={{userSVH.photo}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">{{userSVH.vehicleName}} <br> <b>PRICE: ₹{{userSVH.price}}</b></h3>
+              <h4>{{userSVH.model}}</h4>
+              <p class="card-text">A car or automobile is a motor vehicle with wheels. Most definitions of cars say that they run primarily on roads, seat one to eight people, 
+have four wheels, and mainly transport people.</p>
+                 <button mat-button id="btn1" (click)="deleteCart(userSVH.model)"><mat-icon>remove_shopping_cart</mat-icon></button> 
+                <button mat-raised-button id="btn">
+                    BUY NOW
+                </button>
+            </div>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+
+
+
+<div id="bgImg">
+    <mat-card>
+        <mat-card-title>SIGN UP  <button mat-flat-button type="reset" id="back" routerLink="/login"> BACK </button></mat-card-title><br>
+ 
+    <mat-card-content>
+        <form [formGroup]="detailsForm" id="form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill" id="name">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="name">
+        </mat-form-field>
+    <mat-form-field appearance="fill" id="email">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" id="password">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+    </mat-form-field>
+    <mat-form-field appearance="fill" id="confirmPassword">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" formControlName="confirmPassword">
+    </mat-form-field><br>
+   
+   
+   
+   
+   
+   
+   
+    <mat-form-field appearance="fill" id="phoneNo">
+        <mat-label>Phone Number</mat-label>
+        <input matInput type="number" value="+91" formControlName="phoneNo">
+    </mat-form-field><br>
+    <div formGroupName="address">
+        <h4>Address</h4>
+        <mat-form-field appearance="fill" id="state">
+            <mat-label>State</mat-label>
+            <input matInput type="text" formControlName="state">
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill" id="city">
+            <mat-label>City</mat-label>
+            <input matInput type="text" formControlName="city">
+        </mat-form-field><br>
+        <mat-form-field appearance="fill" id="street">
+            <mat-label>Street</mat-label>
+            <input matInput type="text" formControlName="street">
+        </mat-form-field><br>
+        <mat-form-field appearance="fill" id="landMark">
+            <mat-label>LandMark</mat-label>
+            <input matInput type="text" formControlName="landMark">
+        </mat-form-field>
+        <mat-form-field appearance="fill" id="zipCode">
+            <mat-label>Zip Code</mat-label>
+            <input matInput type="text" formControlName="zipCode">
+        </mat-form-field><br>
+        <button mat-flat-button type="reset" id="reset"> Reset </button>
+        <button mat-flat-button color="accent" [disabled]="!detailsForm.valid" type="submit">Submit</button>
+    </div>
+    </form>
+    </mat-card-content>
+    </mat-card>
+</div>

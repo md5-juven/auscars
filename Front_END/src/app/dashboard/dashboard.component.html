@@ -1,0 +1,23 @@
+
+
+<div>
+  <app-add-vehicle [style.display]="cardVisible ? 'inline' : 'none'" (vehicleAdded)="onAdd($event)"></app-add-vehicle>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" id="main" >
+    <div class="col" *ngFor="let vehicle of vehicles">
+        <div class="card h-100" id="card">
+            <img src={{vehicle.photo}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">{{vehicle.vehicleName}}<br> <b>PRICE: ₹{{vehicle.price}}</b></h3>
+              <h4>{{vehicle.model}}</h4>
+              <p class="card-text">A car or automobile is a motor vehicle with wheels. Most definitions of cars say that they run primarily on roads, seat one to eight people, have four wheels, and mainly transport people.</p>
+                 <button mat-button  *ngIf="!cardVisible"><span class="material-icons">
+                    favorite</span></button>
+                <button mat-button id="btn1" [style.display]="cardVisible ? 'inline' : 'none'" routerLink={{vehicle.model}} >EDIT</button>
+                <button mat-button id="btn" *ngIf="!cardVisible" (click)="mouseOnClick(vehicle.model)">
+                  <img src="../../assets/logos/cart.png" alt="cart" id="cart">
+                </button>
+            </div>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div id="bgImg">
+    <img src="../../assets/images/car2.jpg" alt="" usemap="#carMap">
+    <map name="carMap">
+        <area shape="circle" coords="111,311,639,155" alt="" routerLink="/register">
+    </map>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <mat-card>
+        <mat-card-title>LOGIN</mat-card-title><br>
+        <mat-card-content>
+            <mat-form-field appearance="fill" id="email">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email">
+            </mat-form-field><br>
+            <mat-form-field appearance="fill" id="password">
+                <mat-label>Password</mat-label>
+                <input matInput type="email" formControlName="password">
+            </mat-form-field><br>
+            <button mat-flat-button type="submit" id="login"> LOGIN </button>
+        </mat-card-content>
+    </mat-card>
+</form>
+</div>
+<div>
+    <section>
+        <h1 class="mat-headline-1"> <strong> WELCOME TO AUSCARS </strong></h1>
+        <h5 class="mat-headline-5"> <strong> TO REGISTER CLICK ON THE CAR  AND ENJOY THE RIDE... </strong></h5>
+    </section>
+</div>
+<router-outlet></router-outlet>
